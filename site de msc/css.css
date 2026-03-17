@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    background:
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url("jota.jpeg") center/cover no-repeat;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 8px 0;
+    background: black;
+    color: white;
+    border-radius: 0 0 15px 15px;
+}
+
+/* MENU */
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    margin-top: 10px;
+}
+
+/* LINKS */
+a {
+    text-decoration: none;
+}
+
+/* BOTÃO MÚSICA */
+.btn-musica {
+    background: #1DB954;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    display: inline-block;
+    transition: transform 0.2s, opacity 0.2s;
+    margin: 3px;
+}
+
+.btn-musica:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* LAYOUT LADO A LADO */
+.topo-conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    width: 90%;
+}
+
+/* TEXTO */
+section {
+    max-width: 700px;
+    color: #f1f1f1;
+    line-height: 1.6;
+}
+
+/* CAIXA */
+.caixa {
+    padding: 30px 40px;
+    border: 2px solid cadetblue;
+    border-radius: 10px;
+    box-shadow: 0 0 26px rgba(0,0,0,0.3);
+    width: 100%;
+    max-width: 420px;
+    color: white;
+}
+
+
+/* TIPOGRAFIA */
+h1, h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+p {
+    font-size: 15px;
+}
+
+.videos-lado {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 30px auto;
+}
+
+.video {
+    flex: 1 1 400px;
+    max-width: 520px;
+    aspect-ratio: 16/9;
+}
+
+.video iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
